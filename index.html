@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Daramola Pleasant Rihannah 💕</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1a0a2e 0%, #16213e 50%, #0f3460 100%);
+            overflow-x: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .star {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 2s infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.5); }
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 40px;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .heart-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 40px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .main-heart {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a5a);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            box-shadow: 
+                0 0 60px rgba(255, 107, 107, 0.6),
+                0 0 100px rgba(255, 107, 107, 0.4),
+                inset 0 0 30px rgba(255, 255, 255, 0.3);
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: translate(-50%, -50%) rotate(-45deg) scale(1); }
+            50% { transform: translate(-50%, -50%) rotate(-45deg) scale(1.1); }
+        }
+
+        .ring {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid rgba(255, 107, 107, 0.5);
+            border-radius: 50%;
+            animation: expand 2s ease-out infinite;
+        }
+
+        .ring:nth-child(2) { animation-delay: 0.5s; }
+        .ring:nth-child(3) { animation-delay: 1s; }
+
+        @keyframes expand {
+            0% { width: 80px; height: 80px; opacity: 1; }
+            100% { width: 250px; height: 250px; opacity: 0; }
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(255, 107, 107, 0.8);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 20px rgba(255, 107, 107, 0.5); }
+            to { text-shadow: 0 0 40px rgba(255, 107, 107, 1), 0 0 60px rgba(255, 107, 107, 0.5); }
+        }
+
+        .name-highlight {
+            color: #ff6b6b;
+            font-size: 3rem;
+            display: block;
+            margin: 10px 0;
+            animation: rainbow 3s linear infinite;
+        }
+
+        @keyframes rainbow {
+            0% { color: #ff6b6b; }
+            25% { color: #ff8e8e; }
+            50% { color: #ffb6b6; }
+            75% { color: #ffd1d1; }
+            100% { color: #ff6b6b; }
+        }
+
+        .confession {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 1.5rem;
+            line-height: 2.2;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .confession p {
+            margin-bottom: 15px;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .confession p:nth-child(1) { animation-delay: 0.5s; }
+        .confession p:nth-child(2) { animation-delay: 1s; }
+        .confession p:nth-child(3) { animation-delay: 1.5s; }
+        .confession p:nth-child(4) { animation-delay: 2s; }
+        .confession p:nth-child(5) { animation-delay: 2.5s; }
+        .confession p:nth-child(6) { animation-delay: 3s; }
+        .confession p:nth-child(7) { animation-delay: 3.5s; }
+        .confession p:nth-child(8) { animation-delay: 4s; }
+        .confession p:nth-child(9) { animation-delay: 4.5s; }
+        .confession p:nth-child(10) { animation-delay: 5s; }
+        .confession p:nth-child(11) { animation-delay: 5.5s; }
+        .confession p:nth-child(12) { animation-delay: 6s; }
+        .confession p:nth-child(13) { animation-delay: 6.5s; }
+
+        .highlight {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .big-highlight {
+            color: #ff8e8e;
+            font-size: 2rem;
+            font-weight: bold;
+            display: inline-block;
+            animation: heartbeat 1s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .signature {
+            color: #ff6b6b;
+            font-size: 1.8rem;
+            font-style: italic;
+            margin-top: 30px;
+            opacity: 0;
+            animation: fadeIn 2s ease-out 7s forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        .floating-hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .floating-heart {
+            position: absolute;
+            font-size: 2rem;
+            animation: fall linear infinite;
+            opacity: 0;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+        }
+
+        .btn {
+            padding: 18px 60px;
+            font-size: 1.3rem;
+            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            cursor: pointer;
+            margin-top: 30px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 7.5s forwards;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.6);
+        }
+
+        .hidden-message {
+            display: none;
+            margin-top: 30px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            animation: reveal 1s ease-out forwards;
+        }
+
+        @keyframes reveal {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .hidden-message p {
+            color: #fff;
+            font-size: 1.5rem;
+            line-height: 2;
+            margin: 10px 0;
+        }
+
+        .big-text {
+            font-size: 2.5rem !important;
+            color: #ff6b6b !important;
+            text-shadow: 0 0 20px rgba(255, 107, 107, 0.8);
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .name-highlight { font-size: 2rem; }
+            .confession { font-size: 1.2rem; }
+            .big-highlight { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <div class="container">
+        <div class="heart-container">
+            <div class="main-heart"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+        </div>
+
+        <h1>A Special Message For You</h1>
+        <span class="name-highlight">💖 DARAMOLA PLEASANT RIHANNAH 💖</span>
+
+        <div class="confession">
+            <p>Hey <span class="highlight">Daramola Pleasant Rihannah</span>,</p>
+            
+            <p>You know what's crazy? <span class="highlight">I wasn't looking for love.</span></p>
+            
+            <p>But then the universe whispered, <span class="highlight">"Hold my starlight"</span> —</p>
+            
+            <p>And there you were, <span class="highlight">shining like a supernova</span> in my sky!</p>
+            
+            <p>Daramola, it's absolutely crazy how something so <span class="big-highlight">beautiful</span> can make me feel so <span class="big-highlight">alive</span>,</p>
+            
+            <p>How your smile lights up my darkest nights,</p>
+            
+            <p>How your voice is my favorite melody on repeat,</p>
+            
+            <p>How simply knowing you exists makes my heart do <span class="highlight">backflips and somersaults</span>!</p>
+            
+            <p>I confess — I'm <span class="big-highlight">completely, unapologetically, head-over-heels, insanely in love</span> with you!</p>
+            
+            <p>Not because you're perfect, Daramola,</p>
+            
+            <p>But because you're <span class="highlight">perfectly, wonderfully, beautifully</span> <span class="big-highlight">YOU</span>!</p>
+            
+            <p>You, Daramola Pleasant Rihannah, are my <span class="highlight">dream come true</span>, my <span class="highlight">happily ever after</span>, my <span class="highlight">everything</span>!</p>
+            
+            <p>🌟 <span class="highlight">I love you more than all the stars in every galaxy combined!</span> 🌟</p>
+        </div>
+
+        <p class="signature">— Forever yours, the one who fell impossibly hard for you 💘</p>
+
+        <button class="btn" onclick="showSecret()">Click for My Secret 💋</button>
+
+        <div class="hidden-message" id="secret">
+            <p>🥺❤️</p>
+            <p class="big-text">DARAMOLA PLEASANT RIHANNAH,</p>
+            <p class="big-text">I LOVE YOU MORE THAN WORDS CAN EVER EXPRESS!</p>
+            <p>🌟 Infinity + Infinity + 1 🌟</p>
+            <p style="font-size: 2rem;">💍 WILL YOU BE MINE? 💍</p>
+            <p>❤️ MY HEART BELONGS TO YOU ❤️</p>
+        </div>
+    </div>
+
+    <script>
+        // Create twinkling stars
+        const starsContainer = document.getElementById('stars');
+        for (let i = 0; i < 150; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.animationDelay = Math.random() * 2 + 's';
+            star.style.animationDuration = (Math.random() * 2 + 1) + 's';
+            starsContainer.appendChild(star);
+        }
+
+        // Create floating hearts
+        const heartsContainer = document.getElementById('floatingHearts');
+        const heartSymbols = ['💕', '💗', '💖', '💘', '💝', '❤️', '💟'];
+        
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'floating-heart';
+            heart.innerHTML = heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
+            heart.style.left = Math.random() * 100 + '%';
+            heart.style.animationDuration = (Math.random() * 3 + 4) + 's';
+            heartsContainer.appendChild(heart);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, 7000);
+        }
+
+        setInterval(createHeart, 800);
+
+        // Auto-scroll as text appears
+        const confessionParagraphs = document.querySelectorAll('.confession p');
+        confessionParagraphs.forEach((p, index) => {
+            setTimeout(() => {
+                p.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, (index + 1) * 1000);
+        });
+
+        // Also scroll to signature when it appears
+        const signature = document.querySelector('.signature');
+        setTimeout(() => {
+            signature.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 7000);
+
+        // Also scroll to button when it appears
+        const btn = document.querySelector('.btn');
+        setTimeout(() => {
+            btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 7500);
+
+        // Show/hide secret message (toggle) with scroll
+        let isSecretVisible = false;
+        
+        function showSecret() {
+            const secret = document.getElementById('secret');
+            const btn = document.querySelector('.btn');
+            isSecretVisible = !isSecretVisible;
+            
+            if (isSecretVisible) {
+                secret.style.display = 'block';
+                btn.textContent = 'Close Secret 💋';
+                
+                // Scroll to the secret message
+                setTimeout(() => {
+                    secret.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 100);
+                
+                // Create sparkles only when opening
+                for (let i = 0; i < 30; i++) {
+                    setTimeout(() => {
+                        const sparkle = document.createElement('div');
+                        sparkle.style.cssText = `
+                            position: fixed;
+                            width: 10px;
+                            height: 10px;
+                            background: ${['gold', 'pink', 'red', 'white'][Math.floor(Math.random() * 4)]};
+                            border-radius: 50%;
+                            left: ${Math.random() * 100}%;
+                            top: ${Math.random() * 100}%;
+                            animation: sparkle 1s ease-in-out forwards;
+                            z-index: 1000;
+                        `;
+                        document.body.appendChild(sparkle);
+                        
+                        setTimeout(() => sparkle.remove(), 1000);
+                    }, i * 80);
+                }
+                
+                // Add sparkle keyframes dynamically
+                if (!document.getElementById('sparkle-style')) {
+                    const style = document.createElement('style');
+                    style.id = 'sparkle-style';
+                    style.textContent = `
+                        @keyframes sparkle {
+                            0% { transform: scale(0); opacity: 0; }
+                            50% { transform: scale(1.5); opacity: 1; }
+                            100% { transform: scale(0); opacity: 0; }
+                        }
+                    `;
+                    document.head.appendChild(style);
+                }
+            } else {
+                secret.style.display = 'none';
+                btn.textContent = 'Click for My Secret 💋';
+            }
+        }
+    </script>
+</body>
+</html>
+
