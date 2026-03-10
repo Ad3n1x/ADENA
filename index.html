@@ -337,6 +337,17 @@
     </div>
 
     <script>
+        function checkPassword() {
+    let password = document.getElementById("password").value;
+    let correctPassword = "0831";
+
+    if (password === correctPassword) {
+        document.getElementById("secretContent").style.display = "block";
+        document.getElementById("message").textContent = "Access granted.";
+    } else {
+        document.getElementById("message").textContent = "Wrong password.";
+    }
+        }
         // Create twinkling stars
         const starsContainer = document.getElementById('stars');
         for (let i = 0; i < 150; i++) {
@@ -447,5 +458,6 @@
     </script>
 </body>
 </html>
+
 
 
