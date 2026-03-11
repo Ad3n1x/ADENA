@@ -223,7 +223,60 @@
             100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
         }
 
-        
+        .btn {
+            padding: 18px 60px;
+            font-size: 1.3rem;
+            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            cursor: pointer;
+            margin-top: 30px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 7.5s forwards;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.6);
+        }
+
+        .hidden-message {
+            display: none;
+            margin-top: 30px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            animation: reveal 1s ease-out forwards;
+        }
+
+        @keyframes reveal {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .hidden-message p {
+            color: #fff;
+            font-size: 1.5rem;
+            line-height: 2;
+            margin: 10px 0;
+        }
+
+        .big-text {
+            font-size: 2.5rem !important;
+            color: #ff6b6b !important;
+            text-shadow: 0 0 20px rgba(255, 107, 107, 0.8);
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .name-highlight { font-size: 2rem; }
+            .confession { font-size: 1.2rem; }
+            .big-highlight { font-size: 1.5rem; }
+        }
     </style>
 </head>
 <body>
@@ -271,17 +324,7 @@
 
         <p class="signature">— Forever yours, the one who fell impossibly hard for you 💘</p>
 
-        <button class="btn" onclick="showSecret()">Click for My Secret 💋</button>
-
-        <div class="hidden-message" id="secret">
-            <p>🥺❤️</p>
-            <p class="big-text">DARAMOLA PLEASANT RIHANNAH,</p>
-            <p class="big-text">I LIKE YOU MORE THAN WORDS CAN EVER EXPRESS!</p>
-            <p>🌟 Infinity + Infinity + 1 🌟</p>
-            <p style="font-size: 2rem;">💍 WILL YOU BE MINE? 💍</p>
-            <p>❤️ MY HEART BELONGS TO YOU ❤️</p>
-        </div>
-    </div>
+        
 
     <script>
         function checkPassword() {
@@ -405,6 +448,7 @@
     </script>
 </body>
 </html>
+
 
 
 
